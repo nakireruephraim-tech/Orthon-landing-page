@@ -1,57 +1,60 @@
+'use client'
+
 export default function Features() {
   const features = [
     {
-      title: 'AI-Powered Analysis',
-      description: 'Advanced machine learning algorithms analyze your compliance data in real-time, identifying risks and anomalies before they become issues.',
+      title: 'Knowledge Graph & Vector DB',
+      description: 'Semantic understanding of regulations and policies through advanced knowledge graphs. Vector embeddings enable intelligent search and relationship mapping across your compliance landscape.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        </svg>
+      ),
+    },
+    {
+      title: 'AI-Powered Analysis',
+      description: 'Advanced machine learning models continuously analyze compliance data, predict risks, and surface insights. Natural language processing transforms complex regulations into actionable intelligence.',
+      icon: (
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
     },
     {
-      title: 'Continuous Monitoring',
-      description: 'Never miss a compliance event. Our platform monitors your systems 24/7, ensuring you stay ahead of regulatory requirements.',
+      title: 'Tamper-Evident Audit Vault',
+      description: 'Cryptographically sealed audit trail with blockchain-inspired immutability. Every action, decision, and evidence artifact is permanently recorded with cryptographic proof of integrity.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6" />
         </svg>
       ),
     },
     {
-      title: 'Automated Reporting',
-      description: 'Generate comprehensive compliance reports with a single click. Customize templates for different regulatory frameworks and stakeholders.',
+      title: 'Policy Versioning & Approval Workflows',
+      description: 'Git-style version control for policies with branching, merging, and diff visualization. Configurable approval workflows ensure stakeholder review before policy deployment.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 8l2 2 4-4" />
         </svg>
       ),
     },
     {
-      title: 'Risk Prediction',
-      description: 'Leverage predictive analytics to forecast potential compliance issues and take proactive measures to prevent violations.',
+      title: 'Multi-Connector Integration',
+      description: 'Pre-built connectors for email systems, AWS S3, IAM platforms, SIEM logs, and more. Unified data ingestion from disparate sources into a single compliance control plane.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Integration Ready',
-      description: 'Seamlessly integrate with your existing tools and systems. Connect to ERP, CRM, and audit management platforms in minutes.',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
         </svg>
       ),
     },
     {
-      title: 'Secure & Compliant',
-      description: 'Enterprise-grade security with SOC 2 Type II and ISO 27001 certifications. Your data is encrypted at rest and in transit.',
+      title: 'Automated Remediation Playbooks',
+      description: 'Codified remediation actions that execute automatically when violations are detected. Smart orchestration coordinates responses across multiple systems with rollback capabilities.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
     },
@@ -62,10 +65,10 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Powerful Features for Modern Compliance
+            Enterprise-Grade Compliance Infrastructure
           </h2>
           <p className="text-xl text-secondary-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Everything you need to automate, streamline, and optimize your compliance and audit operations
+            Built on cutting-edge technology to deliver autonomous, reliable, and scalable compliance automation
           </p>
         </div>
 
@@ -73,19 +76,46 @@ export default function Features() {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1"
+              className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-800/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 hover:-translate-y-2 overflow-hidden"
             >
-              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 mb-4">
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/0 via-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:via-primary-500/0 group-hover:to-primary-500/5 transition-all duration-300 rounded-2xl"></div>
+              
+              {/* Icon */}
+              <div className="relative w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-900/20 rounded-xl flex items-center justify-center text-[#3a64a8] dark:text-primary-400 mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md group-hover:shadow-lg group-hover:shadow-primary-500/20">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              
+              {/* Title */}
+              <h3 className="relative text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-secondary-600 dark:text-gray-400 leading-relaxed">
+              
+              {/* Description */}
+              <p className="relative text-sm text-secondary-600 dark:text-gray-400 leading-relaxed">
                 {feature.description}
               </p>
+
+              {/* Bottom accent line */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              {/* Corner decoration */}
+              <div className="absolute top-4 right-4 w-20 h-20 bg-primary-500/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="mt-16 text-center">
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            Want to see how these features work together?
+          </p>
+          <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Explore Platform Architecture
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
