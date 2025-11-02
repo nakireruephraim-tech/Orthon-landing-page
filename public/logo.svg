@@ -1,0 +1,8 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo for Orthon.AI -->
+  <circle cx="30" cy="30" r="24" fill="#3a64a8"/>
+  <path d="M30 15 L30 45 M20 30 L40 30" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="30" cy="30" r="8" stroke="white" stroke-width="2" fill="none"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#3a64a8">Orthon.AI</text>
+</svg>
+
